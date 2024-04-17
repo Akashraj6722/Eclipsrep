@@ -15,6 +15,7 @@ public class CallBank {
 		String bank;
 		String name;
 		float acc;
+		float savings;
 		int amountt;
 		String phone;
 		
@@ -57,7 +58,7 @@ public class CallBank {
 
 	
 		
-		System.out.println("Enter the amount: ");
+		System.out.println("Enter the amount to deposit: ");
 		amountt=input.nextInt();
 
 			while(true) {
@@ -65,6 +66,14 @@ public class CallBank {
 				System.out.println("Enter the VALID AMOUNT ");
 				amountt=input.nextInt();
 			}
+			System.out.println("Enter the savings amount: ");
+			savings=input.nextFloat();
+
+				while(true) {
+				if(savings<=0) {
+					System.out.println("Enter the VALID SAVINGSAMOUNT ");
+					savings=input.nextFloat();
+				}	
 		
 
 		
@@ -84,16 +93,18 @@ public class CallBank {
 		bankDetails.setName(name);
 		bankDetails.setAccNo(acc);
 		bankDetails.setAmount(amountt);
+		bankDetails.setSavings(savings);
 		
 
-		
-		BankMethod bankMethod= new BankMethod();
+		BankMethod bankMethod=new BankMethod();
+		BankClass bankClass = new BankClass();
 	
-//		bankMethod.deposit(phone, bank, amountt);
+		bankMethod.deposit(phone, bank, amountt);
 		
 		
 	   bankMethod.deposit(phone, name);
-	   System.out.println("Deposited amount"+bankMethod.deposit(acc, amountt));
+		bankMethod.deposit(amountt, savings);
+	   bankClass.deposit(amountt, savings);
 	    
 				
 				
@@ -113,4 +124,5 @@ public class CallBank {
 		
 	}
 
+}
 }
