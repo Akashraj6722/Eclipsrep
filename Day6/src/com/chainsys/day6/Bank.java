@@ -7,6 +7,7 @@ public class Bank {
 	float accNo;
 	float amount;
 	String phonee;
+	float savings;
 	
 	
 	
@@ -35,6 +36,13 @@ public class Bank {
 	public void setAmount(float amount) {
 		this.amount = amount;
 	}
+	
+	public float getSavings() {
+		return savings;
+	}
+	public void setSavings(float savings) {
+		this.savings = savings;
+	}
 	public String getPhonee() {
 		return phonee;
 	}
@@ -54,8 +62,11 @@ public class Bank {
 	}
 	@Override
 	public String toString() {
-		return "Bank [bankName=" + bankName + ", accNo=" + accNo + ", amount=" + amount + "]";
+		return "Bank [bankName=" + bankName + ", name=" + name + ", accNo=" + accNo + ", amount=" + amount + ", phonee="
+				+ phonee + ", savings=" + savings + "]";
 	}
+	
+	
 	
 	
 	
