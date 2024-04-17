@@ -2,9 +2,9 @@ package com.chainsys.day6;
 
 public class BankMethod {
 	
-	public int deposit(float acc,int depositedAmount) {
+	public void deposit(float acc,int depositedAmount) {
 		
-		return depositedAmount;
+		System.out.println("DEPOSITED AMOUNT"+depositedAmount);
 	}
 public void deposit(String phone,String name) {
 		
@@ -14,5 +14,14 @@ public void deposit(String phone,String name) {
 		
 		System.out.println("You have deposited  "+depositedAmount);
 	}
+    
+    public void deposit(float depositedAmount,float savings) {
+    	
+    	System.out.println("deposited amount:"+depositedAmount);
+    	System.out.println("savings amount:"+savings);
 
+		
+    	
+
+}
 }
