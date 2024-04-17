@@ -48,11 +48,23 @@ public class CallBank {
 		
 		System.out.println("Enter the account number: ");
 		acc=input.nextFloat();
+		while(true) {
+			if(acc<=0) {
+				System.out.println("Enter the VALID ACCOUNT NUMBER");
+				acc=input.nextFloat();
+			}
+		
 
 	
 		
 		System.out.println("Enter the amount: ");
 		amountt=input.nextInt();
+
+			while(true) {
+			if(amountt<=0) {
+				System.out.println("Enter the VALID AMOUNT ");
+				amountt=input.nextInt();
+			}
 		
 
 		
@@ -95,7 +107,8 @@ public class CallBank {
 		
 		
 		
-		
+			}
+		}
 		
 		
 	}
