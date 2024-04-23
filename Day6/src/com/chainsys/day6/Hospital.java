@@ -5,8 +5,10 @@ public class Hospital {
 
  
 		String hospName;
-		int hospId;
+		String hospId;
 		String hospLocation;
+		String patientName;
+		int patientID;
 		
 		public String getHospName() {
 			return hospName;
@@ -16,10 +18,10 @@ public class Hospital {
 		public void setHospName(String hospName) {
 			this.hospName = hospName;
 		}
-		public int getHospId() {
+		public String getHospId() {
 			return hospId;
 		}
-		public void setHospId(int hospId) {
+		public void setHospId(String hospId) {
 			this.hospId = hospId;
 		}
 		public String getHospLocation() {
@@ -30,17 +32,31 @@ public class Hospital {
 		}
 		
 		
-		
+		public String getPatientName() {
+			return patientName;
+		}
 
-	
+		public void setPatientName(String patientName) {
+			this.patientName = patientName;
+		}
 
-		
+		public int getPatientID() {
+			return patientID;
+		}
 
-		public Hospital(String hospName, int hospId, String hospLocation) {
+		public void setPatientID(int patientID2) {
+			this.patientID = patientID2;
+		}
+
+		public Hospital(String hospName, String hospId, String hospLocation, int patientID, String patientName) {
 		
 			this.hospName = hospName;
 			this.hospId = hospId;
-			this.hospLocation = hospLocation;		}
+			this.hospLocation = hospLocation;	
+			this.patientID=patientID;
+			this.patientName=patientName;
+			
+			}
 
 		public Hospital() {
 			// TODO Auto-generated constructor stub
@@ -48,8 +64,12 @@ public class Hospital {
 
 		@Override
 		public String toString() {
-			return "Hospital [hospName=" + hospName + ", hospId=" + hospId + ", hospLocation=" + hospLocation + "]";
+			return "Hospital [hospName=" + hospName + ", hospId=" + hospId + ", hospLocation=" + hospLocation
+					+ ", patientName=" + patientName + ", patientID=" + patientID + "]";
 		}
+
+		
+		
 		
 		
 		
