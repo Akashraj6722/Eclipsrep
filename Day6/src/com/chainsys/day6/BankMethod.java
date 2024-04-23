@@ -1,27 +1,28 @@
 package com.chainsys.day6;
 
-public class BankMethod {
+ abstract class BankMethod {
+	
+   public void deposit(String phone,String name) {
+		
+		System.out.println("You have account in our bank");
+	}
 	
 	public void deposit(float acc,int depositedAmount) {
 		
 		System.out.println("DEPOSITED AMOUNT"+depositedAmount);
 	}
-public void deposit(String phone,String name) {
-		
-		System.out.println("You have account in our bank");
-	}
+
     public void deposit(String phone,String bankname,int depositedAmount) {
 		
 		System.out.println("You have deposited  "+depositedAmount);
 	}
     
-    public void deposit(float depositedAmount,float savings) {
+   
     	
-    	System.out.println("deposited amount:"+depositedAmount);
-    	System.out.println("savings amount:"+savings);
+    abstract void deposit(float savings,float depositedAmount);
 
 		
     	
 
 }
-}
+
