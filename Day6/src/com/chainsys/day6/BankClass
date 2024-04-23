@@ -2,13 +2,15 @@ package com.chainsys.day6;
 
 
 
-public class BankClass extends BankMethod{
-	 
-	 public  void deposit(float savings,float depositedAmount ) {
-		 float totalAmount=savings+depositedAmount;
-			System.out.println("TOTAL AMOUNT"+totalAmount);
-			
-		 
-	 }
+public   class BankClass extends BankMethod{
+
+	
+	void deposit(float savings,float depositedAmount) {
+		float totalAmount=savings+depositedAmount;
+		System.out.println("TOTAL AMOUNT"+totalAmount);			
+	}
+
     	 
      }
+
+
